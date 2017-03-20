@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 16px;
+}
+
+#header,#nav {
+    margin-bottom: 20px;
+}
+
+
+
+#header h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header img {
+    display: block;
+    height: 50px;
+    width: 50px;
+    flex: 0 1 auto;
+}
+
+#header span {
+    margin-left: 20px;
+    flex: 1 1 auto;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    padding: 0;
+    margin: 0;
+    flex: 0 1 auto;
+    list-style: none;
+}
+#nav ul a {
+    color: #333;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom:solid 1px transparent;
+}
+#nav ul a:hover {
+    border-bottom:solid 1px #666;
+}
+#nav ul a + a {
+    margin-left:5px;
+}
+
+#charte article + article {
+    margin-top: 20px;
+}
+
+#charte img {
+    display: block;
+    max-width: 100%;
+}
+#charte [nav="top"] {
+    display: block;
+    color:#333;
+    text-decoration: none;
+}
+
+#charte [nav="top"]:hover {
+    text-decoration: underline;
+}
+#charte [nav="top"]:before {
+    content:"\25b2";
+}
